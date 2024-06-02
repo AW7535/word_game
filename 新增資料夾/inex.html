@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airav</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/templates/frontend/airav/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/templates/frontend/airav/css/airav.css">
+    <!-- Scripts -->
+    <script src="/templates/frontend/airav/js/jquery-3.3.1.min.js"></script>
+    <script src="/templates/frontend/airav/js/bootstrap.min.js"></script>
+    <script src="/templates/frontend/airav/js/airav.js"></script>
+</head>
+<body>
+    <!-- HTML code goes here -->
+    <div id="wrapper">
+        <!-- Some elements -->
+    </div>
+    <!-- Additional HTML code -->
+    <div class="lazy_img">
+        <!-- Image -->
+    </div>
+    <!-- Additional HTML code -->
+    <script>
+        // Your JavaScript code goes here
+        if ($('.a35c7-1_4 iframe').length <= 0) {
+            $('#chk_cover').prev('.m-b-10.center').css('display', 'block');
+        }
+        var syncLoginUrl = '';
+        if (syncLoginUrl !== '')
+            $('<iframe id="syncLogin" style="width:0px;height: 0px;" src="' + syncLoginUrl + '" ></iframe>').insertAfter('#wrapper');
+    </script>
+    <script>
+        // Additional JavaScript code
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement('style')
+            msViewportStyle.appendChild(
+                document.createTextNode(
+                    '@-ms-viewport{width:auto!important}'
+                )
+            )
+            document.querySelector('head').appendChild(msViewportStyle)
+        }
+        $('[data-toggle="tooltip"]').tooltip();
+    </script>
+    <style>
+        /* Some CSS code */
+        video:not(#wrapper video):not(.ts-im-container video) {
+            display: none;
+        }
+        .ts-im-button-cta__companyinfo{
+            display: flex !important;
+        }
+        .ts-im-button-cta__icon_backup{
+            display: flex !important;
+        }
+        .ts-im-button-cta__textcontent{
+            display: none;
+        }
+        .news_card{
+            position: relative;
+        }
+    </style>
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="059d74bb2bf73f0672ffd621-|49" defer></script>
+</body>
+</html>
